@@ -38,8 +38,9 @@ def CheckIn(cookie):
 
     mess = checkin.json()['message']
     time = state.json()['data']['leftDays']
+    email = state.json()['data']['email']
     days = time.split('.')[0]
-    msg = f'现在时间是：{time_now}\ncheckin: {checkin.status_code} | state: {state.status_code}\n{mess}\n剩余天数：{days}天'
+    msg = f'现在时间是：{time_now}\nemail: {email}\ncheckin: {checkin.status_code} | state: {state.status_code}\n{mess}\n剩余天数：{days}天'
 
     checkin.close()
     state.close()

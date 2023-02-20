@@ -1,2 +1,5 @@
-cookies: #&&分割
-bark_url:
+cookies:
+  - #多cookie
+bark_url: # bark app中的URL
+send_key: # 将Server酱中的SendKey复制到此
+token: # 将push plus微信公众号中的token复制到此
